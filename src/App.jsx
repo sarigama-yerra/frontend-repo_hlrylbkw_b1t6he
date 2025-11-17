@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Scrolly from './components/Scrolly'
+import Pricing from './components/Pricing'
 import CTA from './components/CTA'
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <main className="relative">
         <Hero />
         <Features />
+        <Scrolly />
+        <Pricing />
         <CTA />
       </main>
 
@@ -22,8 +26,8 @@ function App() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between text-sm text-white/60">
           <p>© {new Date().getFullYear()} SentinelAI • Network Detection & Response</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
+            <a href="#pricing" className="hover:text-white">Pricing</a>
+            <a href="#how" className="hover:text-white">How it works</a>
             <a href="/test" className="hover:text-white">Status</a>
           </div>
         </div>
